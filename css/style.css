@@ -2,8 +2,8 @@
 	width:560px; 
 	}
 #slider{ /* Îáîëî÷êà ñëàéäåðà */
-	width:800px;
-	height:500px;
+	width:600px;
+	height:400px;
 	overflow: hidden;
 	border:#eee solid 10px;
 	position:relative;}
