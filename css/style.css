@@ -1,17 +1,17 @@
-#slider-wrap{ /* Оболочка слайдера и кнопок */
+#slider-wrap{ /* ГЋГЎГ®Г«Г®Г·ГЄГ  Г±Г«Г Г©Г¤ГҐГ°Г  ГЁ ГЄГ­Г®ГЇГ®ГЄ */
 	width:560px; 
 	}
-#slider{ /* Оболочка слайдера */
+#slider{ /* ГЋГЎГ®Г«Г®Г·ГЄГ  Г±Г«Г Г©Г¤ГҐГ°Г  */
 	width:500px;
 	height:300px;
 	overflow: hidden;
 	border:#eee solid 10px;
 	position:relative;}
-.slide{ /* Слайд */
+.slide{ /* Г‘Г«Г Г©Г¤ */
 	width:100%;
 	height:100%;
 	}
-.sli-links{ /* Кнопки смены слайдов */
+.sli-links{ /* ГЉГ­Г®ГЇГЄГЁ Г±Г¬ГҐГ­Г» Г±Г«Г Г©Г¤Г®Гў */
 	margin-top:10px;
 	text-align:center;}
 .sli-links .control-slide{
@@ -21,13 +21,13 @@
 	height:16px;
 	overflow:hidden;
 	text-indent:-9999px;
-	background:url(radioBg.png) center bottom no-repeat;}
+	background:url(http://art-md.ml/png/radioBg.png) center bottom no-repeat;}
 .sli-links .control-slide:hover{
 	cursor:pointer;
 	background-position:center center;}
 .sli-links .control-slide.active{
 	background-position:center top;}
-#prewbutton, #nextbutton{ /* Ссылка "Следующий" и "Педыдущий" */
+#prewbutton, #nextbutton{ /* Г‘Г±Г»Г«ГЄГ  "Г‘Г«ГҐГ¤ГіГѕГ№ГЁГ©" ГЁ "ГЏГҐГ¤Г»Г¤ГіГ№ГЁГ©" */
 	display:block;
 	width:15px;
 	height:100%;
@@ -35,13 +35,13 @@
 	top:0;
 	overflow:hidden;
 	text-indent:-999px;
-	background:url(arrowBg.png) left center no-repeat;
+	background:url(http://art-md.ml/png/arrowBg.png) left center no-repeat;
 	opacity:0.8;
 	z-index:3;
 	outline:none !important;}
 #prewbutton{left:10px;}
 #nextbutton{
 	right:10px;
-	background:url(arrowBg.png) right center no-repeat;}
+	background:url(http://art-md.ml/png/arrowBg.png) right center no-repeat;}
 #prewbutton:hover, #nextbutton:hover{
 	opacity:1;}
