@@ -1,8 +1,4 @@
-/*
-Чтение файлов: 10.09.2014
-Автор: Алексей Конан
-Документация: http://akonan.ru/?id=14
-*/
+
 if(!("konan" in window))konan={};
 konan.File=function(url){
 this.method='GET';
