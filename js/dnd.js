@@ -1,8 +1,4 @@
-/*
-Drag & drop. Перетаскивание: 01.11.2015
-Автор: Алексей Конан
-Документация: http://akonan.ru/?id=3
-*/
+
 Dnd=function(id){
 	var t=this;
 	var e=t.element=typeof(id)=='string'?document.querySelector(id):id;
