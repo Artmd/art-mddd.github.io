@@ -97,7 +97,7 @@
 	transform:none;
 	bottom:auto;
 	right:0;
-	background-image:url(../img/dialog/close.svg);
+	background-image:url(http://art-md.ml/dialog/close.svg);
 	background-repeat:no-repeat;
 	background-size:contain;
 	margin-right:8px;
@@ -110,13 +110,13 @@
 	height:100%;
 	display:block;
 	position:absolute;
-	background:url(../img/dialog/prew.png) center no-repeat;
+	background:url(http://art-md.ml/dialog/prew.png) center no-repeat;
 	opacity:0;
 	-webkit-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
 }
 .dialog .dialog-next{
-	background:url(../img/dialog/next.png) center no-repeat;
+	background:url(http://art-md.ml/dialog/next.png) center no-repeat;
 	right:0;
 	left:auto;
 }
@@ -139,7 +139,7 @@
 	height:22px;
 	margin-right:40px;
 	margin-top:8px;
-	background-image:url(../img/dialog/move.svg);
+	background-image:url(http://art-md.ml/dialog/move.svg);
 	background-size:contain;
 	background-repeat:no-repeat;
 	z-index:1;
