@@ -41,7 +41,7 @@
   
    
    
- <style>.bjcontainer {width: 230px;height: 230px;overflow: hidden;float: left;margin: 0px 10px 10px 0px;}</style>
+
 <style>#bestgallerys li {width: 200px;height: 200px;float: left;margin-right: 20px;overflow: hidden;}</style>
 
 <script src="http://art-md.ml/gal/jquery-1.9.1.min.js"></script>
@@ -54,9 +54,9 @@ $('.bjcontainer img').each(function(){
 $(this).load(function() {
 var bjconwidth = Math.round($(this).closest('.bjcontainer').width());
 var bjconheight = Math.round($(this).closest('.bjcontainer').height());
-$(this).css( { height : '75%' } );
+$(this).css( { height : '100%' } );
 if(Math.round($(this).width()) > bjconwidth) {
-$(this).css( { height : '80%' } );
+$(this).css( { height : '100%' } );
 $(this).css( { width : 'auto' } );
 bjotspup = (Math.round($(this).width()) - bjconwidth)/2;
 $(this).css( { marginLeft : -bjotspup + 'px' } ); }
@@ -98,7 +98,6 @@ thumbs:true,  //Показать миниатюры. Цикл с последн�
 zoomable:true //Включить, отключить увеличение колесиком мыши
 });
 </script>
-
 
 
 <br>
