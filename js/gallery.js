@@ -1,9 +1,3 @@
-/*
-Скрипт gallery (галерея): 16.01.2016
-Автор: Алексей Конан
-Документация: http://akonan.ru/javascript_photo_gallery
-*/
-
 Gallery=function(id){
 	var t=this;
 	this.open=function(k,c){
