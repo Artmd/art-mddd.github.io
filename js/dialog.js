@@ -1,8 +1,3 @@
-/*
-Скрипт dialog (диалоговые окна): 03.12.2015
-Автор: Алексей Конан
-Документация: http://akonan.ru/?id=7
-*/
 Dialog=function(a){
 	this.style=function(){
 		var l=document.getElementsByTagName('link');
