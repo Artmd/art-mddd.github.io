@@ -73,7 +73,7 @@ Dialog=function(a){
 	var p='url,fn,arg,width,height,x,y,title,caption,css,html,tpl,class'.split(",");
 	for(var i in p)d[p[i]]=a[p[i]]!=undefined?a[p[i]]:undefined;
 	if(!d.tpl)d.tpl='<div class="dialog" id="{id}"><a onclick="Dialog.objects[\'{id}\'].close()" class="dialog-close"></a><a onmousedown="dnd(event,\'#{id}\')" class="dialog-move"></a><a href="      " target="_blank" class="dialog-copy">    </a><div class="dialog-title">{title}</div><div class="dialog-data">{data}</div><div class="dialog-caption">{caption}</div></div>';
-	if(!d.css)d.css="  ";
+	if(!d.css)d.css="../css/dialog.css";
 	if(!d.class)d.class=(a.x||a.y)?"dialog-open":"dialog-center";
 	d.link=d.style();
 	return Dialog.objects[d.id]=d;
