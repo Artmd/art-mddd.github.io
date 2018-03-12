@@ -40,10 +40,20 @@
    
   
    
-<style>#bestgallerys li {float: left}</style>
-<script src="http://art-md.ml/gal/jquery-1.9.1.min.js"></script>
-<style>.bjcontainer {width: 200px; height: 200px;overflow: hidden; background: #999; 20px; left;margin: 00px  10px 10px 10px;}</style>   
+<script src="jquery-1.9.1.min.js"></script>
+<style>.bjcontainer {width: 230px;height: 230px;overflow: hidden;background: #999;float: left;margin: 0px 10px 10px 0px;}</style>
 
+<!--
+Установка - скопировать и устанвить код и все файлы ниже:
+ -->
+<link rel="stylesheet" href="http://art-md.ml/gal/photobox.css">
+<!--[if lt IE 9]><link rel="stylesheet" href="http://art-md.ml/gal/photobox.ie.css"><![endif]-->
+<!--[if lt IE 9]><script src="http://art-md.ml/gal/html5.js"></script><![endif]-->
+<script src='http://art-md.ml/gal/jquery-1.9.1.min.js'></script>
+<script src='http://art-md.ml/gal/jquery.photobox.js'></script>
+<ul id='bestgallerys'>
+  
+  
 <script type="text/javascript">
 $(document).ready(function() {
 $('.bjcontainer img').each(function(){
@@ -62,31 +72,21 @@ $(this).css( { height : 'auto' } );
 bjotspup = (Math.round($(this).height()) - bjconheight)/2;
 $(this).css( { marginTop : -bjotspup + 'px' } ); }
 }); }); });
-</script>
-
-
-<link rel="stylesheet" href="http://art-md.ml/gal/photobox.css">
-<!--[if lt IE 9]><link rel="stylesheet" href="http://art-md.ml/gal/photobox.ie.css"><![endif]-->
-<!--[if lt IE 9]><script src="http://art-md.ml/gal/html5.js"></script><![endif]-->
-<script src='http://art-md.ml/gal/jquery-1.9.1.min.js'></script>
-<script src='http://art-md.ml/gal/jquery.photobox.js'></script>
-<ul id='bestgallerys'>
+</script>  
   
- <center> 
-<li><a href="http://art-md.ml/images/Dima/1.jpg"><div class="bjcontainer"><img src="http://art-md.ml/images/Dima/1.jpg" title="wedding"></div></a></li>
-<li><a href="http://art-md.ml/images/Dima/2.jpg"><div class="bjcontainer"><img src="http://art-md.ml/images/Dima/2.jpg" title="wedding"></div></a></li>
-<li><a href="http://art-md.ml/images/Dima/3.jpg"><div class="bjcontainer"><img src="http://art-md.ml/images/Dima/3.jpg" title="wedding"></div></a></li>
-<li><a href="http://art-md.ml/images/Dima/4.jpg"><div class="bjcontainer"><img src="http://art-md.ml/images/Dima/4.jpg" title="wedding"></div></a></li>
-<li><a href="http://art-md.ml/images/Dima/5.jpg"><div class="bjcontainer"><img src="http://art-md.ml/images/Dima/5.jpg" title="wedding"></div></a></li>
-<li><a href="http://art-md.ml/images/Dima/6.jpg"><div class="bjcontainer"><img src="http://art-md.ml/images/Dima/6.jpg" title="wedding"></div></a></li>
-<li><a href="http://art-md.ml/images/Dima/7.jpg"><div class="bjcontainer"><img src="http://art-md.ml/images/Dima/7.jpg" title="wedding"></div></a></li>
-<li><a href="http://art-md.ml/images/Dima/1.jpg"><div class="bjcontainer"><img src="http://art-md.ml/images/Dima/1.jpg" title="wedding"></div></a></li>
-<li><a href="http://art-md.ml/images/Dima/2.jpg"><div class="bjcontainer"><img src="http://art-md.ml/images/Dima/2.jpg" title="wedding"></div></a></li>
-<li><a href="http://art-md.ml/images/Dima/3.jpg"><div class="bjcontainer"><img src="http://art-md.ml/images/Dima/3.jpg" title="wedding"></div></a></li>
-<li><a href="http://art-md.ml/images/Dima/4.jpg"><div class="bjcontainer"><img src="http://art-md.ml/images/Dima/4.jpg" title="wedding"></div></a></li>
-<li><a href="http://art-md.ml/images/Dima/5.jpg"><div class="bjcontainer"><img src="http://art-md.ml/images/Dima/5.jpg" title="wedding"></div></a></li>
-</center>
-</ul>
+  
+  
+  
+  
+  
+<div class="bjcontainer"><a href="http://art-md.ml/images/Dima/1.jpg"><img src="http://art-md.ml/images/Dima/1.jpg"></a></div>  
+<div class="bjcontainer"><a href="http://art-md.ml/images/Dima/2.jpg"><img src="http://art-md.ml/images/Dima/2.jpg"></a></div> 
+<div class="bjcontainer"><a href="http://art-md.ml/images/Dima/3.jpg"><img src="http://art-md.ml/images/Dima/3.jpg"></a></div>   
+<div class="bjcontainer"><a href="http://art-md.ml/images/Dima/4.jpg"><img src="http://art-md.ml/images/Dima/4.jpg"></a></div>   
+<div class="bjcontainer"><a href="http://art-md.ml/images/Dima/5.jpg"><img src="http://art-md.ml/images/Dima/5.jpg"></a></div> 
+<div class="bjcontainer"><a href="http://art-md.ml/images/Dima/6.jpg"><img src="http://art-md.ml/images/Dima/6.jpg"></a></div> 
+<div class="bjcontainer"><a href="http://art-md.ml/images/Dima/7.jpg"><img src="http://art-md.ml/images/Dima/7.jpg"></a></div> 
+  
 <script>
 $('#bestgallerys').photobox('a',{
 time:0,       //Убрать кнопку autoplay, если нужна - то поставить от 1000
@@ -94,6 +94,18 @@ thumbs:true,  //Показать миниатюры. Цикл с последн�
 zoomable:true //Включить, отключить увеличение колесиком мыши
 });
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
