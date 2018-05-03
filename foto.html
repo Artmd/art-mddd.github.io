@@ -110,7 +110,44 @@ zoomable:true //Включить, отключить увеличение кол
 
 
 
-
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Кнопка "Вверх" при помощи JavaScript - "Нубекс"</title>
+  
+  <style>
+  #topNubex {
+	position: fixed;
+	right: 45px;
+	bottom: 45px;
+   }
+  </style>
+  
+  <script src="http://art-md.ml/js/jquery.min.js"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+  $(window).scroll(function() {
+  if($(this).scrollTop() != 0) {
+  $('#topNubex').fadeIn();
+  } else {
+  $('#topNubex').fadeOut();
+  }
+  });
+  $('#topNubex').click(function() {
+  $('body,html').animate({scrollTop:0},700);
+  });
+  });
+  </script>
+ </head>
+ <body>
+   
+   <div style="height:3000px"></div>
+   
+   <div id="topNubex"><img src="http://art-md.ml/img/if_arrow-up_9191.png" width="30px" height="30px" /></div>
+ </body>
+</html>
 
 
 
