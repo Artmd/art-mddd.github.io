@@ -2,8 +2,8 @@
 	width:560px; 
 	}
 #slider{ /* Оболочка слайдера */
-	width:500px;
-	height:300px;
+	width:940px;
+	height:581px;
 	overflow: hidden;
 	border:#eee solid 10px;
 	position:relative;}
