@@ -24,7 +24,7 @@ h6{
 }
 
 .container{
-    width: 1156px;
+    width: 940px;
     margin: 0 auto;
     position: relative;
 }
@@ -49,8 +49,8 @@ p{
 
 /* Menu button */
 .open-menu{
-    width: 24px;
-    height: 24px;
+    width: 44px;
+    height: 44px;
     background: transparent;
     border: none;
     position: absolute;
@@ -60,7 +60,7 @@ p{
     z-index: 9;
 }
 .open-menu span{
-    width: 24px;
+    width: 44px;
     height: 3px;
     background: #000;
     display: block;
@@ -94,8 +94,8 @@ p{
 
 .close-menu{
     display: none;
-    width: 24px;
-    height: 24px;
+    width: 44px;
+    height: 44px;
     background: transparent;
     border: none;
     position: absolute;
@@ -106,7 +106,7 @@ p{
 }
 .close-menu:before{
     content: '';
-    width: 24px;
+    width: 44px;
     height: 2px;
     background: #fff;
     position: absolute;
@@ -117,7 +117,7 @@ p{
 }
 .close-menu:after{
     content: '';
-    width: 24px;
+    width: 44px;
     height: 2px;
     background: #fff;
     position: absolute;
@@ -189,5 +189,4 @@ p{
 .main-menu a:hover{
     opacity: .75;
 }
-
 
