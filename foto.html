@@ -39,43 +39,7 @@
     <div id="overlay"></div>
 
     
-    <script src="http://art-md.ml/js/index.js"></script>
-</body>
-</html>
- 
-  
-   
-<script src="jquery-1.9.1.min.js"></script>
-<style>.bjcontainer {width: 1136px;height: 757px;overflow: hidden;background: #999;float: left;margin: 0px 10px 10px 0px;}</style>
-
-
-<link rel="stylesheet" href="http://art-md.ml/gal/photobox.css">
-<!--[if lt IE 9]><link rel="stylesheet" href="http://art-md.ml/gal/photobox.ie.css"><![endif]-->
-<!--[if lt IE 9]><script src="http://art-md.ml/gal/html5.js"></script><![endif]-->
-<script src='http://art-md.ml/gal/jquery-1.9.1.min.js'></script>
-<script src='http://art-md.ml/gal/jquery.photobox.js'></script>
-<ul id='bestgallerys'>
-  
-  
-<script type="text/javascript">
-$(document).ready(function() {
-$('.bjcontainer img').each(function(){
-$(this).load(function() {
-var bjconwidth = Math.round($(this).closest('.bjcontainer').width());
-var bjconheight = Math.round($(this).closest('.bjcontainer').height());
-$(this).css( { height : '100%' } );
-if(Math.round($(this).width()) > bjconwidth) {
-$(this).css( { height : '100%' } );
-$(this).css( { width : 'auto' } );
-bjotspup = (Math.round($(this).width()) - bjconwidth)/2;
-$(this).css( { marginLeft : -bjotspup + 'px' } ); }
-else {
-$(this).css( { width : '99%' } );
-$(this).css( { height : 'auto' } );
-bjotspup = (Math.round($(this).height()) - bjconheight)/2;
-$(this).css( { marginTop : -bjotspup + 'px' } ); }
-}); }); });
-</script>  
+    
 
   
 <h1><div><a href="http://art-md.ml/images/Dima/1.jpg"><img src="http://art-md.ml/images/Dima/1.jpg"></a></div></h1>  
@@ -101,15 +65,6 @@ $(this).css( { marginTop : -bjotspup + 'px' } ); }
 <h1><div><a href="http://art-md.ml/images/Dima/21.jpg"><img src="http://art-md.ml/images/Dima/21.jpg"></a></div></h1>
 <h1><div><a href="http://art-md.ml/images/Dima/22.jpg"><img src="http://art-md.ml/images/Dima/22.jpg"></a></div></h1>
 
-
-  
-<script>
-$('#bestgallerys').photobox('a',{
-time:0,       //Убрать кнопку autoplay, если нужна - то поставить от 1000
-thumbs:true,  //Показать миниатюры. Цикл с последнего изображения на первое
-zoomable:true //Включить, отключить увеличение колесиком мыши
-});
-</script>
 
 
 
