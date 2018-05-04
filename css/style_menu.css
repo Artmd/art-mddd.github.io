@@ -1,84 +1,193 @@
-// Variables
-$red: #e74c3c;
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto+Slab:300,400,700&subset=cyrillic');
 
-// Placeholder selector
-%transition {transition: all .3s;}
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    font: 21px/1.4 'Roboto Condensed', sans-serif;;
+    color: #202020;
+    background: #fff;
+}
 
-/*Typography*/
-body {font: 16px sans-serif;}
-/*Layout*/
-html,
-body {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100%;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-size: 54px;
+    font-weight: 300;
+    font-family: 'Roboto Slab', serif;
+    margin: 0 0 30px 0;
 }
-/*Section*/
-section,
-.overlay {
-  width: 100%;
-  height: 100%;
+
+.container{
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
 }
-section {
-  background: url(https://i.imgur.com/8oqmNEx.jpg) no-repeat center center;
-  background-size: cover;
+
+p{
+    opacity: .75;
 }
-input {display: none;}
-input:checked + label {&:before {content: "\f00d";}}
-input:checked ~ .overlay {
-  visibility: visible;
-  opacity: 1;
+
+/* Header */
+.site-header{
+    width: 100%;
+    height: 90px;
+    background: #f5f5f5;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.25);
+    position: relative;
 }
-label {
-  position: fixed;
-  top: 0.625em;
-  right: 0.625em;
-  z-index: 99;
-  padding: .72em 0;
-  width: 3em;
-  text-align: center;
-  background: $red;
-  color: #fff;
-  border-radius: 50%;
-  cursor: pointer;
-  @extend %transition;
-  &:before {
-    content: "\f0c9";
-    font: 1.55em fontAwesome;
-  }
-  &:hover {background: darken($red, 10%);}
+.site-header .logo{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 90px;
 }
-.overlay {
-  position: relative;
-  z-index: 2;
-  background: #333;
-  background: rgba(51,51,51,.8);
-  opacity: 0;
-  @extend %transition;
-  visibility: hidden;
+
+/* Menu button */
+.open-menu{
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: calc(50% - 12px);
+    right: 0;
+    cursor: pointer;
+    z-index: 9;
 }
-.nav {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  padding: 0;
-  width: 10em;
-  height: 12em;
-  list-style-type: none;
+.open-menu span{
+    width: 24px;
+    height: 3px;
+    background: #000;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
-.nav a {
-  display: block;
-  padding: .25em 0;
-  color: #fff;
-  font-size: 1.85em;
-  text-align: center;
-  text-decoration: none;
-  @extend %transition;
-  &:focus,
-  &:hover {color: $red;}
-  &:active {color: darken($red, 10%);}
+.open-menu:before{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    top: 14px;
+    left: 0;
 }
+.open-menu:after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    top: 7px;
+    left: 0;
+}
+
+.open-menu:focus{
+    border: none;
+    outline: none;
+}
+
+.close-menu{
+    display: none;
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: calc(50% - 12px);
+    right: 0;
+    cursor: pointer;
+    z-index: 99;
+}
+.close-menu:before{
+    content: '';
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 12px;
+    transform: rotate(45deg);
+    transition: all 200ms;
+}
+.close-menu:after{
+    content: '';
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 12px;
+    transform: rotate(-45deg);
+    transition: all 200ms;
+}
+
+.close-menu:hover:before{
+    transform: rotate(0deg);
+}
+.close-menu:hover:after{
+    transform: rotate(0deg);
+}
+
+.close-menu:focus{
+    border: none;
+    outline: none;
+}
+
+/* Top area */
+.top-area{
+    width: 100%;
+    background: #1077bc;
+    padding: 90px 0;
+    overflow: hidden;
+    color: #fff;
+}
+
+/* Hamburger menu */
+#overlay{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: #e04769;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 8;
+}
+
+.main-menu{
+    display: none;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 90px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.main-menu ul{
+    margin: 0;
+    padding: 0;
+}
+.main-menu li{
+    font-size: 54px;
+    font-weight: 700;
+    padding: 15px 0;
+    list-style: none;
+}
+.main-menu a{
+    color: #fff;
+    text-decoration: none;
+}
+.main-menu a:hover{
+    opacity: .75;
+}
+
+
