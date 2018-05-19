@@ -1,6 +1,54 @@
-html{
-	height:100%;
+/* PHOTO.HTML  */
+._gotoindex     {text-align:left;}
+.container_art  {width:100%; max-width:1200px; background-color:#FFF; margin:0 auto; padding:0;}
+.container_art_ {padding:15px;}
+.photo_50 img   {width:49.5%; float:right; margin-bottom:10px}
+.photo_50_1 img {width:49.5%; float:left; margin-bottom:10px}
+.photo_100 img  {width:100%; margin-bottom:10px;}
+
+#toTop          {display:none; text-decoration:none; position:fixed; bottom:45px; left:10px; overflow:hidden; width:60px; height:60px; border:none; text-indent:100%; 
+                 background:url(../img/ui.totop.png) no-repeat left top;}
+#toTopHover     {background:url(../img/ui.totop.png) no-repeat left -60px; width:60px; height:60px; display:block; overflow:hidden; float:left; opacity:0; -moz-opacity:0; filter:alpha(opacity=0);}
+#toTop:active, #toTop:focus {outline:none;}
+
+/* VIDEO.HTML  */
+.video          {position:relative; padding-bottom:41.70%; height:0; margin-bottom: 20px;}
+.video iframe   {position:absolute; top:0; left:0; width:100%; height:100%; box-shadow:0 1px 4px rgba(0,0,0,0.4);}
+
+
+@media (max-width: 9000px) {
+	#rig li {width:50%;}
 }
-body{
-	height:100%;
+
+@media (max-width: 1200px) {
+    body      {width:85%; max-width:1200px; min-width:330px; margin:0 auto;}
+	#rig li   {width:50%;}
+}
+
+@media (max-width: 800px) {
+    body      {width:100%; max-width:1200px; min-width:330px; margin:0 auto;}
+	#rig li   {width:50%;}
+    .rig-cell {margin:15px;}
+}
+
+@media (max-width: 600px) {
+    header          {margin:20px 10px 10px 10px; z-index:999; position:relative;}
+    body            {width:100%; max-width:1200px; min-width:330px; margin:0 auto;}
+    #logo_img       {display:inline; width:220px;}
+	#rig li         {width:100%;}
+    .rig-cell       {margin:5px 10px;}
+    .rig-cell h1    {bottom:25px; left:20px;}
+    .rig-cell h2    {bottom:25px; left:20px;}
+	.rig-overlay    {display:none;}
+    .last           {margin-bottom:48px;}
+	.container_art_ {padding:5px 10px;}
+    .photo_50 img, .photo_50_1 img, .photo_100 img {width:100%; margin-bottom:10px;}
+	.icon_footer    {position:fixed; left:0; bottom:0; width:100%; background:#FFF; min-width:330px; z-index:999;}
+    .icon_fb_       {display:inline; float:left; width:35px; height:25px; margin:10px 0 10px 10px;}
+    .icon_vk_       {display:inline; float:left; width:35px; height:25px; margin:10px 0 10px 0; padding:0; border:0;}
+    .icon_in_       {display:inline; float:left; width:35px; height:25px; margin:10px 0 10px 0; padding:0; border:0;}
+    .icon_tl_       {display:inline; float:right; text-align:right; width:200px; height:25px; margin:14px 10px 7px 0; padding:0; border:0;}
+    .icon_tl_ h2    {margin:0; padding:0;}
+    .video_last     {margin-bottom:48px;}
+
 }
