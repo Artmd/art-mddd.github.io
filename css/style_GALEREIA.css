@@ -7,8 +7,8 @@
 .photo_100 img  {width:100%; margin-bottom:10px;}
 
 #toTop          {display:none; text-decoration:none; position:fixed; bottom:45px; left:10px; overflow:hidden; width:60px; height:60px; border:none; text-indent:100%; 
-                 background:url(../img/ui.totop.png) no-repeat left top;}
-#toTopHover     {background:url(../img/ui.totop.png) no-repeat left -60px; width:60px; height:60px; display:block; overflow:hidden; float:left; opacity:0; -moz-opacity:0; filter:alpha(opacity=0);}
+                 background:url(      ) no-repeat left top;}
+#toTopHover     {background:url(      ) no-repeat left -60px; width:60px; height:60px; display:block; overflow:hidden; float:left; opacity:0; -moz-opacity:0; filter:alpha(opacity=0);}
 #toTop:active, #toTop:focus {outline:none;}
 
 /* VIDEO.HTML  */
